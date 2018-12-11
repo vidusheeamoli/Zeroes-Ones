@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Zeroes and Ones</title>
+	</head>
+
+	<body>
+		<h1>Recent Posts</h1>
+
+		<ul style="list-style-type:disc;">
+		
+		{% for post in posts %}
+				
+				<li><h2><a href="{{post.address}}"> {{post.title}} </a></
+				h2> <h3> {{post.date}} </h3></li>
+		
+		{% endfor %}
+
+		</ul>
+
+	</body>
+</html>
